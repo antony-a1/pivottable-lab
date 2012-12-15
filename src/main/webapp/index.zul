@@ -1,0 +1,38 @@
+<zk>
+	<style src="/css/olap-pivot-demo.css" />
+	<window apply="org.zkoss.pivot.lab.olap.ui.OlapPivotDemoController">
+		<hlayout>
+			<panel id="main" hflex="1" border="normal">
+				<caption label="Pivottable" />
+				<panelchildren>
+					<vlayout spacing="0">
+						<pivottable id="pivot" hflex="1">
+							<div></div>
+							<div>Columns</div>
+							<div>Rows</div>
+						</pivottable>
+						<div id="descDiv" />
+					</vlayout>
+				</panelchildren>
+			</panel>
+			<panel id="field" title="Control" width="300px" border="normal">
+				<panelchildren>
+					<vlayout style="padding: 10px">
+						<div class="footnote" style="padding: 5px 0">(Drag fields among the areas below)</div>
+						<pivot-field-control id="pfc" height="300px" use="org.zkoss.pivot.lab.olap.ui.OlapPivotFieldControl" />
+						<hlayout hflex="1">
+							<button id="updateBtn" label="Update" disabled="true" autodisable="+self" />
+						</hlayout>
+						<div>
+							<radiogroup id="dataOrient">
+								Data field orientation:
+								<radio id="colOrient" label="column" />
+								<radio id="rowOrient" label="row" />
+							</radiogroup>
+						</div>
+					</vlayout>
+				</panelchildren>
+			</panel>
+		</hlayout>
+	</window>
+</zk>

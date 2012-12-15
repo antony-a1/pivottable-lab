@@ -1,0 +1,8 @@
+.olap-pivot-measure-field .z-label {
+	font-weight: bold;
+	color: #339933;
+}
+.olap-pivot-hierarchy-field .z-label {
+	font-weight: bold;
+	color: #333399;
+}
